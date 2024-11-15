@@ -6,7 +6,7 @@
     font-family: Arial, sans-serif;
 }
 
-/* pic */
+/* Profile Image */
 .profile-img {
     width: 150px;
     height: 150px;
@@ -17,15 +17,14 @@
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 
-/* name */
+/* Name */
 .name {
     font-size: 3rem;
     font-weight: bold;
     color: #ffffff;
-    /* Shadow Remove*/
 }
 
-
+/* Body and HTML */
 body,
 html {
     height: 100%;
@@ -39,21 +38,15 @@ html {
     overflow: hidden;
 }
 
-.content {
-    flex: 1;
-    margin-left: 300px;
-    height: 100vh;
-    padding: 20px;
-    overflow-y: auto;
-}
-
+/* Container */
 .container {
     display: flex;
     height: 100vh;
     overflow: hidden;
+    flex-direction: row;
 }
 
-/* Sidebar styles */
+/* Sidebar */
 .sidebar {
     width: 325px;
     height: 100%;
@@ -133,6 +126,7 @@ html {
     box-shadow: 0 0 10px #64ffda;
 }
 
+/* Social Icons */
 .sidebar .social-icons {
     margin-top: auto;
     display: flex;
@@ -147,17 +141,19 @@ html {
     transition: transform 0.2s ease-in-out;
 }
 
-/*Grow Icons*/
 .social-icons a:hover img {
     transform: scale(1.2);
 }
 
-/* Main*/
+/* Main Content */
 .content {
     flex: 1;
-    padding: 60px;
+    margin-left: 325px;
+    padding: 20px;
+    overflow-y: auto;
 }
 
+/* Section Styles */
 .section {
     margin-bottom: 40px;
 }
@@ -178,43 +174,28 @@ html {
     color: #64ffda;
 }
 
-/* Glowing  Experience */
-.j {
-    font-size: 3rem;
-    font-weight: bold;
-    color: #ffffff;
-    text-shadow:
-        0 0 10px rgb(7, 1, 20),
-        0 0 20px rgba(255, 255, 255, 0.6),
-        0 0 30px rgba(255, 255, 255, 0.4),
-        0 0 40px rgba(255, 255, 255, 0.2);
+/* Experience Section */
+.experience-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
 }
 
-/* Glowing Projects */
-.k {
-    font-size: 3rem;
-    font-weight: bold;
-    color: #ffffff;
-    text-shadow:
-        0 0 10px rgb(7, 1, 20),
-        0 0 20px rgba(255, 255, 255, 0.6),
-        0 0 30px rgba(255, 255, 255, 0.4),
-        0 0 40px rgba(255, 255, 255, 0.2);
+.experience-gif {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    margin-top: 10px;
+    transition: all 0.2s ease-in-out;
 }
 
-/* Glowing about*/
-.l {
-    font-size: 3rem;
-    font-weight: bold;
-    color: #ffffff;
-    text-shadow:
-        0 0 10px rgb(7, 1, 20),
-        0 0 20px rgba(255, 255, 255, 0.6),
-        0 0 30px rgba(255, 255, 255, 0.4),
-        0 0 40px rgba(255, 255, 255, 0.2);
+.experience-gif:hover {
+    content: attr(data-hover);
 }
 
-/* Project Section Styling */
+/* Project Section */
 .projects-container {
     display: flex;
     flex-direction: column;
@@ -247,26 +228,96 @@ html {
 .project-content p {
     margin-top: 10px;
     font-size: 0.9rem;
-
 }
 
-.experience-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
+/* Mobile Specific Adjustments */
+@media screen and (max-width: 768px) {
+
+    /* Adjust Sidebar */
+    .sidebar {
+        width: 250px;
+        padding: 15px;
+    }
+
+    .content {
+        margin-left: 0;
+        padding: 20px;
+    }
+
+    .profile-img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .name {
+        font-size: 2rem;
+    }
+
+    .intro h1 {
+        font-size: 1.8rem;
+    }
+
+    .intro h2 {
+        font-size: 1rem;
+    }
+
+    .section h3 {
+        font-size: 1.2rem;
+    }
+
+    .projects-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .project-card {
+        padding: 15px;
+    }
+
+    .experience-gif {
+        max-width: 100%;
+    }
 }
 
-.experience-gif {
-    width: 100%;
-    max-width: 400px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-    margin-top: 10px;
-    transition: all 0.2s ease-in-out;
-}
+/* Mobile Specific for Smaller Screens */
+@media screen and (max-width: 480px) {
+    .sidebar {
+        width: 100%;
+        position: relative;
+        height: auto;
+    }
 
-/* Hover Effect */
-.experience-gif:hover {
-    content: attr(data-hover);
+    .content {
+        margin-left: 0;
+        padding: 10px;
+    }
+
+    .profile-img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .name {
+        font-size: 1.5rem;
+    }
+
+    .intro h1 {
+        font-size: 1.5rem;
+    }
+
+    .intro h2 {
+        font-size: 0.9rem;
+    }
+
+    .section h3 {
+        font-size: 1rem;
+    }
+
+    .projects-container {
+        gap: 15px;
+    }
+
+    .project-card {
+        padding: 10px;
+    }
 }
