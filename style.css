@@ -223,14 +223,12 @@ html {
     font-size: 0.9rem;
 }
 
-/* COPY PASTA */
 /* Mobile Specific Adjustments */
 @media screen and (max-width: 768px) {
 
     /* Adjust Sidebar */
     .sidebar {
-        width: 250px;
-        padding: 15px;
+        width: 40%;
     }
 
     .content {
@@ -276,7 +274,7 @@ html {
 /* Mobile Specific for Smaller Screens */
 @media screen and (max-width: 480px) {
     .sidebar {
-        width: 100%;
+        width: 40%;
         position: relative;
         height: auto;
     }
