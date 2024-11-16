@@ -17,13 +17,6 @@
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 
-/* Name */
-.name {
-    font-size: 3rem;
-    font-weight: bold;
-    color: #ffffff;
-}
-
 /* Body and HTML */
 body,
 html {
@@ -66,7 +59,7 @@ html {
 .intro h1 {
     font-size: 2.5em;
     font-weight: bold;
-    color: #ccd6f6;
+    color: #66ff00;
 }
 
 .intro h2 {
@@ -78,12 +71,13 @@ html {
 
 .intro p {
     margin-top: 20px;
-    color: #a8b2d1;
-    font-size: 1em;
+    color: #ffffff;
+    font-size: 1.1em;
 }
 
-/* Sidebar Nav */
+/* Sidebar Nav*/
 .sidebar nav ul {
+    text-align: center;
     list-style: none;
     width: 100%;
 }
@@ -126,7 +120,7 @@ html {
     box-shadow: 0 0 10px #64ffda;
 }
 
-/* Social Icons */
+/* Social */
 .sidebar .social-icons {
     margin-top: auto;
     display: flex;
@@ -145,7 +139,7 @@ html {
     transform: scale(1.2);
 }
 
-/* Main Content */
+/* Main */
 .content {
     flex: 1;
     margin-left: 325px;
@@ -153,32 +147,31 @@ html {
     overflow-y: auto;
 }
 
-/* Section Styles */
+/* Section */
 .section {
     margin-bottom: 40px;
 }
 
 .section h3 {
     font-size: 1.5em;
-    color: #ccd6f6;
+    color: #ff006a;
     margin-bottom: 10px;
 }
 
 .section p {
     font-size: 1em;
-    color: #a8b2d1;
+    color: #ffffff;
     line-height: 1.6;
 }
 
 .section p strong {
-    color: #64ffda;
+    color: #00ffc3;
 }
 
-/* Experience Section */
+/* Experience */
 .experience-content {
     display: flex;
     flex-direction: column;
-    align-items: center;
     gap: 15px;
 }
 
@@ -186,7 +179,7 @@ html {
     width: 100%;
     max-width: 400px;
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 4px 10px rgb(58, 255, 75);
     margin-top: 10px;
     transition: all 0.2s ease-in-out;
 }
@@ -195,7 +188,7 @@ html {
     content: attr(data-hover);
 }
 
-/* Project Section */
+/* Project */
 .projects-container {
     display: flex;
     flex-direction: column;
@@ -215,7 +208,7 @@ html {
 
 .project-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    box-shadow: 2px 8px 16px rgb(58, 255, 75);
     background: rgba(255, 255, 255, 0.1);
 }
 
@@ -230,6 +223,7 @@ html {
     font-size: 0.9rem;
 }
 
+/* COPY PASTA */
 /* Mobile Specific Adjustments */
 @media screen and (max-width: 768px) {
 

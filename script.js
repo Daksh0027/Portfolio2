@@ -1,3 +1,4 @@
+alert("Welcome To My Portfolio!");
 const gifImage = document.querySelector('.experience-gif');
 const staticSrc = gifImage.src;
 const animatedSrc = gifImage.getAttribute('data-hover');
